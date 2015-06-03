@@ -1,0 +1,24 @@
+
+测试环境：win7+goagent3.2.3
+一、在proxy.user.ini中添加：
+[profile] 
+accounts.google.com = google_hk,forcehttps,nofakehttps
+clients3.google.com = google_hk,forcehttps,nofakehttps
+drive.google.com = google_hk,forcehttps,nofakehttps
+upload.drive.google.com = google_hk,forcehttps,nofakehttps
+.google.com = google_hk,forcehttps,nofakehttps
+googledrive.com = google_hk,forcehttps,nofakehttps
+
+[gae]
+keepalive = 1
+obfuscate = 1
+
+[dns]
+enable = 1
+
+二、修改driver客户端“偏好设置-高级”为：自动检测代理设置
+三、设置ie代理：勾选  127.0.01"8087
+
+
+如果使用中还存在问题，加装DNScrypt以解决dns污染
+
